@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Formular înscriere admitere</title>
+    </head>
+    <body>
+        <div>
+            <img src="logoubbfmi.jpg" width="75" height="75" alt="UBB FMI logo">
+            <h3>Procesul de Admitere</h3>
+            <ol type="1">
+                <li>Consultă site-ul facultății <a href="https://www.cs.ubbcluj.ro/" target="_blank">aici</a></li>
+                <li>Completează formularul de înscriere online</li>
+                <li>Depune dosarul la secretariatul facultății</li>
+                <li>Susține examenele de admitere:
+                    <ul>
+                        <li>Examen la informatică</li>
+                        <li>Examen la matematică</li>
+                    </ul>
+                </li>
+                <li>Afișarea rezultatelor și contestații</li>
+                <li>Înscrierea la facultate</li>
+                <li>Participarea la sesiunea de introducere în mediul academic</li>
+            </ol>
+        </div>
+        <div align="left">
+            <h3>Formular Înscriere Admitere</h3><br>
+            Codul dumneavoastră este: <input type="text" name="cod" value="5Y111067" size="7" readonly>
+            <p>Completați cu informațiile dumneavoastră următorul formular</p>
+        </div>
+        <form action="#" method="post">
+            <table border="1" cellspacing="0" cellpadding="8">
+                <tr>
+                    <th colspan="2" bgcolor="#CCCCCC"><b>Informații Personale</b></th>
+                </tr>
+                <tr>
+                    <td><b>Nume: </b><input type="text" name="nume"></td>
+                    <td><b>Prenume: </b><input type="text" name="prenume"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>Sex: </b>
+                        <input type="radio" name="sex" value="masculin"> Masculin
+                        <input type="radio" name="sex" value="feminin"> Feminin
+                        <input type="radio" name="sex" value="altul" checked> Altul
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Data nașterii: </b><input type="text" name="data_nasterii"></td>
+                    <td><b>CNP: </b><input type="text" name="cnp"></td>
+                </tr>
+                <tr>
+                    <td><b>Email: </b><input type="text" name="email"></td>
+                    <td><b>Telefon: </b><input type="text" name="telefon"></td>
+                </tr>
+                <tr>
+                    <td><b>Judeţ: </b>
+                    <select id="judete" name="judete">
+                    <option value="alba">Alba</option>
+                    <option value="arad">Arad</option>
+                    <option value="arges">Argeș</option>
+                    <option value="bacau">Bacău</option>
+                    <option value="bihor">Bihor</option>
+                    <option value="bistrita_nasaud">Bistrița-Năsăud</option>
+                    <option value="botosani">Botoșani</option>
+                    <option value="brasov">Brașov</option>
+                    <option value="braila">Brăila</option>
+                    <option value="buzau">Buzău</option>
+                    <option value="calarasi">Călărași</option>
+                    <option value="caras_severin">Caraș-Severin</option>
+                    <option value="cluj" selected>Cluj</option>
+                    <option value="constanta">Constanța</option>
+                    <option value="covasna">Covasna</option>
+                    <option value="dambovita">Dâmbovița</option>
+                    <option value="dolj">Dolj</option>
+                    <option value="galati">Galați</option>
+                    <option value="gorj">Gorj</option>
+                    <option value="harghita">Harghita</option>
+                    <option value="hunedoara">Hunedoara</option>
+                    <option value="ialomita">Ialomița</option>
+                    <option value="iasi">Iași</option>
+                    <option value="ilfov">Ilfov</option>
+                    <option value="maramures">Maramureș</option>
+                    <option value="mehedinti">Mehedinți</option>
+                    <option value="mures">Mureș</option>
+                    <option value="neamt">Neamț</option>
+                    <option value="olt">Olt</option>
+                    <option value="prahova">Prahova</option>
+                    <option value="satu_mare">Satu Mare</option>
+                    <option value="salaj">Sălaj</option>
+                    <option value="sibiu">Sibiu</option>
+                    <option value="suceava">Suceava</option>
+                    <option value="teleorman">Teleorman</option>
+                    <option value="timis">Timiș</option>
+                    <option value="tulcea">Tulcea</option>
+                    <option value="vaslui">Vaslui</option>
+                    <option value="valcea">Vâlcea</option>
+                    <option value="vrancea">Vrancea</option>
+                    </select>
+                    </td>
+                    <td><b>Oraş: </b><input type="text" name="oras"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" valign="top">
+                    <b>Adresă: </b>
+                    <table border="1" cellspacing="0" cellpadding="8">
+                        <tr>
+                            <th bgcolor="#CCCCCC"><b>Stradă</b></th>
+                            <th bgcolor="#CCCCCC"><b>Număr</b></th>
+                            <th bgcolor="#CCCCCC"><b>Bloc</b></th>
+                            <th bgcolor="#CCCCCC"><b>Apartament</b></th>
+                            <th bgcolor="#CCCCCC"><b>Etaj</b></th>
+                            <th bgcolor="#CCCCCC"><b>Cod poștal</b></th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="strada" size="10"></td>
+                            <td><input type="text" name="numar" size="4"></td>
+                            <td><input type="text" name="bloc" size="3"></td>
+                            <td><input type="text" name="apartament" size="10"></td>
+                            <td><input type="text" name="etaj" size="3"></td>
+                            <td><input type="text" name="cod_postal" size="6" maxlength="6"></td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+                </table>
+              <table border="1" cellspacing="0" cellpadding="8">
+                <tr>
+                    <th rowspan="5" bgcolor="#CCCCCC"><b>Informații Academice</b></th>
+                </tr>
+                <tr>
+                    <td><b>Liceul absolvit:</b> <input type="text" name="liceu_absolvit" size="30"></td>
+                    <td rowspan="2"><b>Profilul: </b>
+                    <select id="profiluri" name="profiluri" multiple>
+                        <option value="mate_info">Matematică & Informatică</option>
+                        <option value="stiinte">Ştiinţele Naturii</option>
+                        <option value="socio">Ştiinţe sociale</option>
+                        <option value="filo">Filologie</option>
+                        <option value="tehnic">Tehnic</option>
+                        <option value="vocational">Vocațional</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>Medie bacalaureat:</b> <input type="text" name="medie_bac" size="4" title="Introduceți o notă de la 1 la 10"></td>
+                </tr>
+                <tr>
+                    <td><b>Notă bacalaureat Matematică:</b> <input type="text" name="nota_matematica" size="4" title="Introduceți o notă de la 1 la 10"></td>
+                    <td><b>Notă bacalaureat Informatică:</b> <input type="text" name="nota_informatica" size="4" title="Introduceți o notă de la 1 la 10"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>Alte Diplome:</b> <textarea name="alte_diplome" rows="2" cols="30"></textarea>
+                        (concursuri, olimpiade, certificate limbi străine etc.)</td>
+                </tr>
+                </table>
+              <fieldset>
+                <legend>Opțiuni Admitere</legend>
+                <b>Listă opțiuni disponibile:</b>
+                <ul>
+                    <li>Departamentul Matematică
+                    <ol>
+                      <li>Matematică <input type="text" name="mate" value="192" size="3" disabled></li>
+                      <li>Matematică & Informatică<input type="text" name="mate" value="152" size="3" disabled></li>
+                    </ol>
+                    </li>
+                    <li>Departamentul Informatică
+                    <ol>
+                        <li>Informatică <input type="text" name="mate" value="134" size="3" disabled></li>
+                        <li>Inteligență artificială <input type="text" name="mate" value="232" size="3" disabled></li>
+                    </ol>
+                    </li>
+                  </ul><br>
+                  <b>Specializare dorită: </b><input type="text" name="specializare" size="30"><br>
+                (scrie codul pentru specializarea dorita exact așa cum este prezentat în dreapta "Listă opțiuni disponibile")<br>
+                <b>Listă linii de studiu disponibile:</b>
+                <ul>
+                    <li><input type="checkbox" name="limba" value="romana"> Română</li>
+                    <li><input type="checkbox" name="limba" value="engleza"> Engleză</li>
+                    <li><input type="checkbox" name="limba" value="maghiara"> Maghiară</li>
+                    <li><input type="checkbox" name="limba" value="germana"> Germană</li>
+                </ul><br>
+                <b>Formă de finanțare dorită: </b>
+                    <input type="radio" name="finantare" value="taxa"> Taxă
+                    <input type="radio" name="finantare" value="buget" checked> Buget
+              </fieldset>
+              <center>
+                <div>
+                    <input type="submit" value="Trimite Cererea">
+                  </div>
+              </center>
+        </form>
+    </body>
+</html>
